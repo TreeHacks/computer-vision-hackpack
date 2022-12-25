@@ -27,3 +27,9 @@ Pic of each one
 ... 
 
 ## 
+
+
+make sure you have python installed correctly + arm stuff and etc.
+install tensorflow 
+
+then etc. 
