@@ -26,7 +26,9 @@ Pic of each one
 
 ... 
 
-## 
+## The model
+
+## Using the model to make predictions
 
 
 make sure you have python installed correctly + arm stuff and etc.
