@@ -49,11 +49,10 @@ Go over code of augmenting and saving it. Show that it will create a new folder 
 
 #### Pre-processing 
 
-Go over the process of processing it and then saving it into a pickle file. 
+Go over processing it and then saving it into a pickle file. 
 
 ## The model
 
-W
 
 ## Using the model to make predictions
 
