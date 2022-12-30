@@ -1,24 +1,12 @@
 # computer-vision-hackpack
 
-The task we have chosen is building an image classifier that recognises the party-parrot and party-blob slackmojis from scratch! This includes the process from building the dataset to having a final model/making a flask app. When you’re building models for new tasks, oftentimes there aren't any pre-existing datasets that are available for use. If you come up with an idea that requires a novel classification problem that hasn't been adressed before, this hackpack can help you start out! We take the example of parrot-blob classification but any of these steps can be subsituted with your own classes. 
-
-What you'll learn:
-1. Making a dataset
-2. Processing dataset
-3. Choosing architecture
-4. ...
+The task we have chosen is building an image classifier that recognises the party-parrot and party-blob slackmojis from scratch! This includes the process from building the dataset to having a final model that can make predictions. When you’re building models for new tasks, oftentimes there aren't any pre-existing datasets that are available for use. If you come up with an idea that requires a novel classification problem that hasn't been adressed before, this hackpack can help you start out! We take the example of parrot-blob classification but any of these steps can be subsituted with your own classes. 
 
 Pre-requisites:
 1. How to use a jupyter notebook
-2. 
+2. Basics of python
 
-+ add something to use it w a flask app 
-
-This doesn't cover the details of... + the math behind it and stuff. 
-
-The project- We're going to make a model that classifies popcorn and unpopped popcorn kernels:
-
-Pic of each one 
+This hackpack doesn't cover the fundamentals of deep learning, but is just something to give you a start in creating your model with libraries such as tensorflow as well as understanding how to create a project for your own specific tasks. We're going to be classifying two really fun slackmojis- the party-parrot and party-blob! 
 
 ![kernel-popcorn (2)](https://user-images.githubusercontent.com/93958307/210043334-f0b32ae4-bf38-4960-af0c-39b804c3076f.jpg)
 
@@ -87,7 +75,7 @@ Furthermore, the follwing are used:
 
 ## Using the model to make predictions
 
-We save the model using the ... The 
+We save the model using the .save method. You will now have a folder in your project called 'Parrot-Blob-CNN.model'. You can now load this model to be used without having to train it again! The method for using it to predict on images can be seen in the .ipynb file in the repo. As can be seen, any image that we wish to put into our model needs to be prepared in a certain format which is covered by the 'prepare' function. Furthermoe, the model outputs a probability score and not a class. Hence, the 'predict' function converts this probability into either 'parrot' or 'blob'.  
 
 ## Improvements
 
@@ -95,3 +83,5 @@ This is a relatively optimistic expectation...
 
 Changing the model
 Using transfer learning
+Get more data!!! 
+For this problem specifically, it is a relatively easy classification task since the images do not have much variation and hence do not require too much diversity in its dataset. However, for many other problems, you need to be sure to check if you are covering all the edge cases and broadening your datset as much as possible to get the most accurate model! 
