@@ -84,3 +84,11 @@ Changing the model
 Using transfer learning
 Get more data!!! 
 For this problem specifically, it is a relatively easy classification task since the images do not have much variation and hence do not require too much diversity in its dataset. However, for many other problems, you need to be sure to check if you are covering all the edge cases and broadening your datset as much as possible to get the most accurate model! 
+
+# About HackPacks 🌲
+
+HackPacks are built by the TreeHacks team to help hackers build great projects at our hackathon that happens every February at Stanford. We believe that everyone of every skill level can learn to make awesome things, and this is one way we help facilitate hacker culture. We open source our hackpacks (along with our internal tech) so everyone can learn from and use them! Feel free to use these at your own hackathons, workshops, and anything else that promotes building :)
+
+If you're interested in attending TreeHacks, you can apply on our website during the application period.
+
+You can follow us here on GitHub to see all the open source work we do (we love issues, contributions, and feedback of any kind!), and on Facebook, Twitter, and Instagram to see general updates from TreeHacks.
