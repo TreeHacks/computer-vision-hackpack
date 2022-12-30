@@ -68,9 +68,9 @@ Go over processing it and then saving it into a pickle file.
 
 ## The model
 
-Our model architecture is as follows:
+The model is created using the Sequential class from the Keras library, which allows the layers to be added one by one in a linear fashion. The input to the model is a set of images represented as a 4D array (X), with dimensions corresponding to the number of samples, height, width, and channels (color depth). Our model architecture is as follows:
 
-<img width="604" alt="Screenshot 2022-12-30 at 2 59 44 PM" src="https://user-images.githubusercontent.com/93958307/210055199-47c356bf-8ac1-433c-8c75-bd1bd679c81a.png">
+![blob-parrot-cnn (1)](https://user-images.githubusercontent.com/93958307/210059699-70710b23-3203-41e6-b3dc-27e1b532cb1a.png)
 
 Some details of the architecture are:
 1. Conv2D: This is a 2D convolutional layer that applies a set of filters to the input data, resulting in a set of feature maps. The filters are trained to recognize certain patterns or features in the input data, and each filter produces one feature map. The size of the filters and the number of filters in the layer are determined by the layer_size variable. The (3, 3) tuple specifies the size of the filters.
@@ -83,6 +83,7 @@ Some details of the architecture are:
 Furthermore, the follwing are used:
 1. model.compile: This function configures the model's learning process, setting the loss function, optimization algorithm, and performance metrics to be used during training. In this case, the loss function is binary cross-entropy, which is commonly used for binary classification tasks, and the optimization algorithm is Adam. The model will also be evaluated using the accuracy metric.
 2. model.fit: This function trains the model on the given data (X and y) using the configuration specified in model.compile. The model is trained using mini-batch gradient descent with a batch size of 32 and for 25 epochs. During training, the model's performance on a validation set (a subset of the training data) is monitored using the TensorBoard callback, which logs the model's performance and allows it to be visualized using TensorFlow's visualization tool.
+3. model.summary: This function outputs a summary of all the layers in our model! 
 
 ## Using the model to make predictions
 
