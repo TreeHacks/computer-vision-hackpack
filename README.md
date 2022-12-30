@@ -68,6 +68,8 @@ Go over processing it and then saving it into a pickle file.
 
 ## The model
 
+Out model architecture is as follows:
+
 ## Using the model to make predictions
 
 ## Improvements
