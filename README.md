@@ -35,9 +35,17 @@ Once you've found a way to best collect data, it's time to setup your folders an
 
 ![folderstruc](https://user-images.githubusercontent.com/93958307/210040804-be1c1658-2e75-458e-95b0-e86031e94342.gif)
 
-For this hackpack, we collected the data from google images to curate our dataset. If you'd like to do so as well, go for it! It can be a bit of a tedious process so you can also download our dataset here- //add link//. 
+For this hackpack, we collected the data from google images to curate our dataset. If you'd like to do so as well, go for it! Make sure to have all your images be in .jpg form. It can be a bit of a tedious process so you can also download our dataset here- //add link//. 
 
 ## Installations
+
+You will need to install the following libraries:
+
+##### Tensorflow: 
+If you are a windows user... if you have the M1/M2 mac, there is a bit of a complication when installinh tensorflow. You can follow this tutorial (we followed its instructions and it worked flawlessly!)- 
+
+##### OpenCV:
+Do the folliwing:
 
 go over installing tensorflow + how there is indeed a problem w mac m1/m2. 
 make sure you have python installed correctly + arm stuff and etc.
@@ -45,7 +53,7 @@ install tensorflow
 
 ## Augmentation 
 
-As can be seen, this is a very small dataset with only ___ number of images in each class. To increase the size of our dataset, we perform something called 'Data Augmentation'. Follow the ... 
+As can be seen, this is a very small dataset with only around 50 images in each class (this is a very very small dataset). To increase the size of our dataset, we perform something called 'Data Augmentation'. Data augmentation is a technique used to artificially increase the size of a dataset by generating new, modified versions of existing data samples, helping us increase the size and diversity of our dataset. This technique addresses the problem of overfitting, which occurs when a model is trained on a small, limited dataset and is not able to generalize well.
 
 Image of the augmented data...
 
@@ -56,6 +64,7 @@ Go over code of augmenting and saving it. Show that it will create a new folder 
 Go over processing it and then saving it into a pickle file. 
 
 ## The model
+
 
 
 ## Using the model to make predictions
