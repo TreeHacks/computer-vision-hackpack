@@ -20,7 +20,11 @@ The project- We're going to make a model that classifies popcorn and unpopped po
 
 Pic of each one 
 
-![kernel-popcorn (1)](https://user-images.githubusercontent.com/93958307/210040449-33d31adc-2212-439f-9e55-4b62a9e5f4c6.jpg)
+![kernel-popcorn (2)](https://user-images.githubusercontent.com/93958307/210043334-f0b32ae4-bf38-4960-af0c-39b804c3076f.jpg)
+
+## Project setup
+
+On your computer, create a folder titled 'computer_vision_hackpack'. Within that, create two folders- 'blob-parrot' and 'augmented_data'. Within each of these folders, create two more folders titled- 'parrot' and 'blob'. 
 
 ## Making the dataset
 
@@ -31,9 +35,7 @@ However, if you wish to tackle a specific problem, you will need to collect data
 2. Synthetic Datasets
 3. Manual Data Generation- Build the dataset by manual collection! Sometimes you've just gotta... The most popular platform for crowdsourcing is Amazon Mechanical Turk where tasks are assigned to human workers, who are compensated for finishing the tasks.
 
-Once you've found a way to best collect data, it's time to setup your folders and begin adding that data to your dataset! In this hackpack, we organize the data by having a single folder titled "parrot-blob-data" containing two seperate folders for each class (categories you are classifying)- "parrot" and "blob". It is also good practice to have the split of data be equal for each of the classes (i.e., approximately equal number of images for each class). Our folder structure looks like this:
-
-![folderstruc](https://user-images.githubusercontent.com/93958307/210040804-be1c1658-2e75-458e-95b0-e86031e94342.gif)
+Once you've found a way to best collect data, it's time to setup your folders and begin adding that data to your dataset! In this hackpack, we organize the data by having a single folder titled "blob-parrot" containing two seperate folders for each class (categories you are classifying)- "parrot" and "blob". It is also good practice to have the split of data be equal for each of the classes (i.e., approximately equal number of images for each class). 
 
 For this hackpack, we collected the data from google images to curate our dataset. If you'd like to do so as well, go for it! Make sure to have all your images be in .jpg form. It can be a bit of a tedious process so you can also download our dataset here- //add link//. 
 
@@ -53,19 +55,18 @@ install tensorflow
 
 ## Augmentation 
 
-As can be seen, this is a very small dataset with only around 50 images in each class (this is a very very small dataset). To increase the size of our dataset, we perform something called 'Data Augmentation'. Data augmentation is a technique used to artificially increase the size of a dataset by generating new, modified versions of existing data samples, helping us increase the size and diversity of our dataset. This technique addresses the problem of overfitting, which occurs when a model is trained on a small, limited dataset and is not able to generalize well.
+As can be seen, this is a very small dataset with only around 50 images in each class (this is a very very small dataset). To increase the size of our dataset, we perform something called 'Data Augmentation'. Data augmentation is a technique used to artificially increase the size of a dataset by generating new, modified versions of existing data samples, helping us increase the size and diversity of our dataset. This technique addresses the problem of overfitting, which occurs when a model is trained on a small, limited dataset and is not able to generalize well. This is an example of our augmented data:
 
-Image of the augmented data...
+![dataaug_example](https://user-images.githubusercontent.com/93958307/210051307-2c525e9c-6044-411e-8c05-a3672653ddd2.png)
 
 Go over code of augmenting and saving it. Show that it will create a new folder called 'augmented_images' with each of the classes. 
 
 ## Pre-processing 
 
+We make them unifrom size... 
 Go over processing it and then saving it into a pickle file. 
 
 ## The model
-
-
 
 ## Using the model to make predictions
 
