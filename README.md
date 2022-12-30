@@ -58,7 +58,7 @@ Go over processing it and then saving it into a pickle file.
 
 The model is created using the Sequential class from the Keras library, which allows the layers to be added one by one in a linear fashion. The input to the model is a set of images represented as a 4D array (X), with dimensions corresponding to the number of samples, height, width, and channels (color depth). Our model architecture is as follows:
 
-![blob-parrot-cnn (1)](https://user-images.githubusercontent.com/93958307/210059699-70710b23-3203-41e6-b3dc-27e1b532cb1a.png)
+![blob-parrot-cnn (2)](https://user-images.githubusercontent.com/93958307/210061992-e0e599ea-cbe4-43c2-bc83-066ba2ba0a9a.png)
 
 Some details of the architecture are:
 1. Conv2D: This is a 2D convolutional layer that applies a set of filters to the input data, resulting in a set of feature maps. The filters are trained to recognize certain patterns or features in the input data, and each filter produces one feature map. The size of the filters and the number of filters in the layer are determined by the layer_size variable. The (3, 3) tuple specifies the size of the filters.
