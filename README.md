@@ -14,18 +14,10 @@ This hackpack doesn't cover the fundamentals of deep learning, but is just somet
 
 On your computer, create a folder titled 'computer_vision_hackpack'. Within that, create two folders- 'blob-parrot' and 'augmented_data'. Within each of these folders, create two more folders titled- 'parrot' and 'blob'. 
 
+Use the environment.yml file to install dependencies. 
+```conda env create --file=environment.yml```
 
-You will need to install the following libraries:
-
-##### Tensorflow: 
-If you are a windows user... if you have the M1/M2 mac, there is a bit of a complication when installinh tensorflow. You can follow this tutorial (we followed its instructions and it worked flawlessly!)- 
-
-##### OpenCV:
-Do the folliwing: 
-
-go over installing tensorflow + how there is indeed a problem w mac m1/m2. 
-make sure you have python installed correctly + arm stuff and etc.
-install tensorflow 
+If you are an M1/M2 mac user, there may be some issues you face while installing tensorflow. I followed this video's instructions which worked flawlessly- https://www.youtube.com/watch?v=_CO-ND1FTOU (your mac may be running the intel chip instead of the M1 which would allow you to take advantage of the GPU!)
 
 ## Making the dataset
 
