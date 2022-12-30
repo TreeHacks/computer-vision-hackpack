@@ -21,12 +21,15 @@ The project- We're going to make a model that classifies popcorn and unpopped po
 
 Pic of each one 
 
+![kernel-popcorn (1)](https://user-images.githubusercontent.com/93958307/210031712-ef7bf9b9-d814-4d9d-9348-5fc8d7fb2f9c.png)
+
 ## Making the dataset
 
 You may be familiar with several popular datasets such as MNIST, the cat-dog classifier, imagenet, etc. How do you make your own dataset? While we won't be covering how to make massive datasets such as imagenet, we will go over some techniques you can use to build a basic, small to medium size dataset. 
 
 First, setting up the folders: The best way to organize your data is to have a folder containing seperate folders for each of your classes (categories you are classifying). It is also good practice to have the split of data be equal for each of the classes (i.e., approximately equal number of images for each class). For our specific task, it is a binary classification problem which means that we only have two classes- Popcorn and Kernel. Hence, our data looks like this:
 
+<img width="741" alt="Screenshot 2022-12-30 at 9 04 26 AM" src="https://user-images.githubusercontent.com/93958307/210031821-1763e62e-d196-438c-a657-b0173e586a91.png">
 
 Collecting the data: There's a few ways you can go about this. If there isn't a pre-existing dataset on public dataset platforms (Kaggle, UCI Machine Learning Repository, Google’s Datasets Search Engine, Lionbridge AI, to name a few), you can use the following stratergies to build a dataset:
 1. Web Scraping- You can read about web scraping online. Some tools that are good Scrapy, ProWebScraper, and ScraperAPI. 
