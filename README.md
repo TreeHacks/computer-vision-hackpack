@@ -59,7 +59,7 @@ As can be seen, this is a very small dataset with only around 50 images in each 
 
 ![dataaug_example](https://user-images.githubusercontent.com/93958307/210051307-2c525e9c-6044-411e-8c05-a3672653ddd2.png)
 
-Go over code of augmenting and saving it. Show that it will create a new folder called 'augmented_images' with each of the classes. 
+We augment the data with two parametes: rotation_range=90, horizontal_flip=True. Follow the code in data-processing.ipynb to see this in action! 
 
 ## Pre-processing 
 
