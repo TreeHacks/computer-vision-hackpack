@@ -10,9 +10,22 @@ This hackpack doesn't cover the fundamentals of deep learning, but is just somet
 
 ![kernel-popcorn (2)](https://user-images.githubusercontent.com/93958307/210043334-f0b32ae4-bf38-4960-af0c-39b804c3076f.jpg)
 
-## Project setup
+## Project Setup and Installations
 
 On your computer, create a folder titled 'computer_vision_hackpack'. Within that, create two folders- 'blob-parrot' and 'augmented_data'. Within each of these folders, create two more folders titled- 'parrot' and 'blob'. 
+
+
+You will need to install the following libraries:
+
+##### Tensorflow: 
+If you are a windows user... if you have the M1/M2 mac, there is a bit of a complication when installinh tensorflow. You can follow this tutorial (we followed its instructions and it worked flawlessly!)- 
+
+##### OpenCV:
+Do the folliwing: 
+
+go over installing tensorflow + how there is indeed a problem w mac m1/m2. 
+make sure you have python installed correctly + arm stuff and etc.
+install tensorflow 
 
 ## Making the dataset
 
@@ -26,20 +39,6 @@ However, if you wish to tackle a specific problem, you will need to collect data
 Once you've found a way to best collect data, it's time to setup your folders and begin adding that data to your dataset! In this hackpack, we organize the data by having a single folder titled "blob-parrot" containing two seperate folders for each class (categories you are classifying)- "parrot" and "blob". It is also good practice to have the split of data be equal for each of the classes (i.e., approximately equal number of images for each class). 
 
 For this hackpack, we collected the data from google images to curate our dataset. If you'd like to do so as well, go for it! Make sure to have all your images be in .jpg form. It can be a bit of a tedious process so you can also download our dataset here- //add link//. 
-
-## Installations
-
-You will need to install the following libraries:
-
-##### Tensorflow: 
-If you are a windows user... if you have the M1/M2 mac, there is a bit of a complication when installinh tensorflow. You can follow this tutorial (we followed its instructions and it worked flawlessly!)- 
-
-##### OpenCV:
-Do the folliwing: 
-
-go over installing tensorflow + how there is indeed a problem w mac m1/m2. 
-make sure you have python installed correctly + arm stuff and etc.
-install tensorflow 
 
 ## Augmentation 
 
