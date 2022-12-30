@@ -15,6 +15,7 @@ This hackpack doesn't cover the theoretical fundamentals of deep learning, but i
 On your computer, create a folder titled 'computer_vision_hackpack'. Within that, create two folders- 'blob-parrot' and 'augmented_data'. Within each of these folders, create two more folders titled- 'parrot' and 'blob'. 
 
 Use the environment.yml file to install dependencies. 
+
 ```conda env create --file=environment.yml```
 
 If you are an M1/M2 mac user, there may be some issues you face while installing tensorflow. I followed this video's instructions which worked flawlessly- https://www.youtube.com/watch?v=_CO-ND1FTOU (your mac may be running the intel chip instead of the M1 which would allow you to take advantage of the GPU!)
@@ -26,7 +27,7 @@ For supervised machine learning, forming a dataset is one of the most crucial st
 However, if you wish to tackle a specific problem, you will need to collect data for it if there isn't a pre-existing public dataset that has the data you require. There are a few ways to go about this to build an image classification dataset: 
 1. Web Scraping- You can read about web scraping online. Some tools that are good Scrapy, ProWebScraper, and ScraperAPI. 
 2. Synthetic Datasets
-3. Manual Data Generation- Build the dataset by manual collection! Sometimes you've just gotta... The most popular platform for crowdsourcing is Amazon Mechanical Turk where tasks are assigned to human workers, who are compensated for finishing the tasks.
+3. Manual Data Generation- Build the dataset by manual collection! Sometimes the best option is resources like google images. Web scrapping is another great option to obtain a high quantity of images. Crowdsourcing has also become popular with great sources like Amazon Mechanical Turk where tasks are assigned to human workers, who are compensated for finishing the tasks.
 
 Once you've found a way to best collect data, it's time to setup your folders and begin adding that data to your dataset! In this hackpack, we organize the data by having a single folder titled "blob-parrot" containing two seperate folders for each class (categories you are classifying)- "parrot" and "blob". It is also good practice to have the split of data be equal for each of the classes (i.e., approximately equal number of images for each class). 
 
@@ -69,8 +70,6 @@ Furthermore, the follwing are used:
 We save the model using the .save method. You will now have a folder in your project called 'Parrot-Blob-CNN.model'. You can now load this model to be used without having to train it again! The method for using it to predict on images can be seen in the .ipynb file in the repo. As can be seen, any image that we wish to put into our model needs to be prepared in a certain format which is covered by the 'prepare' function. Furthermoe, the model outputs a probability score and not a class. Hence, the 'predict' function converts this probability into either 'parrot' or 'blob'.  
 
 ## Improvements
-
-This is a relatively optimistic expectation...  
 
 Changing the model
 Using transfer learning
