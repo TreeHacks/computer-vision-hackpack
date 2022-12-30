@@ -47,7 +47,7 @@ You will need to install the following libraries:
 If you are a windows user... if you have the M1/M2 mac, there is a bit of a complication when installinh tensorflow. You can follow this tutorial (we followed its instructions and it worked flawlessly!)- 
 
 ##### OpenCV:
-Do the folliwing:
+Do the folliwing: 
 
 go over installing tensorflow + how there is indeed a problem w mac m1/m2. 
 make sure you have python installed correctly + arm stuff and etc.
@@ -68,9 +68,25 @@ Go over processing it and then saving it into a pickle file.
 
 ## The model
 
-Out model architecture is as follows:
+Our model architecture is as follows:
+
+<img width="604" alt="Screenshot 2022-12-30 at 2 59 44 PM" src="https://user-images.githubusercontent.com/93958307/210055199-47c356bf-8ac1-433c-8c75-bd1bd679c81a.png">
+
+Some details of the architecture are:
+1. Conv2D: This is a 2D convolutional layer that applies a set of filters to the input data, resulting in a set of feature maps. The filters are trained to recognize certain patterns or features in the input data, and each filter produces one feature map. The size of the filters and the number of filters in the layer are determined by the layer_size variable. The (3, 3) tuple specifies the size of the filters.
+2. Activation: This layer applies an activation function to the output of the preceding layer. In this case, the activation function is the ReLU (Rectified Linear Unit) function, which outputs the input value if it is positive, and 0 if it is negative. This helps the model learn non-linear relationships in the data.
+3. MaxPooling2D: This is a 2D pooling layer that downsamples the input data by taking the maximum value in each pooling window and creating a new feature map from it. The (2, 2) tuple specifies the size of the pooling window. Pooling helps reduce the size of the data, which can make the model more efficient and reduce the risk of overfitting.
+4. Flatten: This layer flattens the output of the preceding layers into a single 1D vector, which is then input into the dense layers.
+5. Dense: This is a fully connected (dense) layer that applies a set of weights to the input data and produces a set of outputs. The number of weights and outputs is determined by the layer_size variable.
+6. Activation: This layer applies the sigmoid activation function to the output of the preceding layer. The sigmoid function maps the output to a value between 0 and 1, which can be interpreted as a probability.
+
+Furthermore, the follwing are used:
+1. model.compile: This function configures the model's learning process, setting the loss function, optimization algorithm, and performance metrics to be used during training. In this case, the loss function is binary cross-entropy, which is commonly used for binary classification tasks, and the optimization algorithm is Adam. The model will also be evaluated using the accuracy metric.
+2. model.fit: This function trains the model on the given data (X and y) using the configuration specified in model.compile. The model is trained using mini-batch gradient descent with a batch size of 32 and for 25 epochs. During training, the model's performance on a validation set (a subset of the training data) is monitored using the TensorBoard callback, which logs the model's performance and allows it to be visualized using TensorFlow's visualization tool.
 
 ## Using the model to make predictions
+
+We save the model using the ... The 
 
 ## Improvements
 
