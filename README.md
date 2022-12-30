@@ -59,7 +59,7 @@ Image of the augmented data...
 
 Go over code of augmenting and saving it. Show that it will create a new folder called 'augmented_images' with each of the classes. 
 
-#### Pre-processing 
+## Pre-processing 
 
 Go over processing it and then saving it into a pickle file. 
 
