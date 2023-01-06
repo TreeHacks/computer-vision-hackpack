@@ -6,13 +6,15 @@ Pre-requisites:
 1. How to use a jupyter notebook
 2. Basics of python
 
-This hackpack doesn't cover the theoretical fundamentals of deep learning, but is just something to give you a start in creating your model with libraries such as tensorflow as well as understanding how to create a project for your own specific tasks. We're going to be classifying two really fun slackmojis- the party-parrot and party-blob! 
+This hackpack doesn't cover the theoretical fundamentals of deep learning, but is just something to give you a start in creating your model with libraries such as tensorflow as well as understanding how to create a project for your own specific tasks. We're going to be classifying two slackmojis- the party-parrot and party-blob! 
 
 ![kernel-popcorn (2)](https://user-images.githubusercontent.com/93958307/210043334-f0b32ae4-bf38-4960-af0c-39b804c3076f.jpg)
 
 ## Project Setup and Installations
 
 On your computer, create a folder titled 'computer_vision_hackpack'. Within that, create two folders- 'blob-parrot' and 'augmented_data'. Within each of these folders, create two more folders titled- 'parrot' and 'blob'. 
+
+<img width="744" alt="Screenshot 2023-01-06 at 1 50 45 PM" src="https://user-images.githubusercontent.com/93958307/210959869-02b47bc9-ba31-4b0b-b7ee-289881b8b1e3.png">
 
 Use the requirements.txt file to install dependencies. 
 
@@ -31,7 +33,7 @@ However, if you wish to tackle a specific problem, you will need to collect data
 
 Once you've found a way to best collect data, it's time to setup your folders and begin adding that data to your dataset! In this hackpack, we organize the data by having a single folder titled "blob-parrot" containing two seperate folders for each class (categories you are classifying)- "parrot" and "blob". It is also good practice to have the split of data be equal for each of the classes (i.e., approximately equal number of images for each class). 
 
-For this hackpack, we collected the data from google images to curate our dataset. If you'd like to do so as well, go for it! Make sure to have all your images be in .jpg form. It can be a bit of a tedious process so you can also download our dataset [here] (https://drive.google.com/file/d/19llxcWohf0DqswkYSm4OIqNUV5_VQmS-/view?usp=share_link). 
+For this hackpack, we collected the data from google images to curate our dataset. If you'd like to do so as well, go for it! Make sure to have all your images be in .jpg form. It can be a bit of a tedious process so you can also download our dataset from blob-parrot.zip. 
 
 ## Augmentation 
 
@@ -43,8 +45,7 @@ We augment the data with two parametes: rotation_range=90, horizontal_flip=True.
 
 ## Pre-processing 
 
-We make them unifrom size... 
-Go over processing it and then saving it into a pickle file. 
+We resize images to be uniform, shuffle the data, and then use pickle to export it giving us 'X.pickle' which contains our image data and 'y.pickle' which contains its corresponding labe;s. From here, you can either proceed to train the model in your local jupyter notebook or you can train it on another tool such as on Google Collab. If you wish to implement this in collab, you just need to upload your pickle files to a collab notebook and copy-paste the rest of this code to train a model! Be sure to download the end model to your local computer at the end. 
 
 ## The model
 
