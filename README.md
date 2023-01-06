@@ -14,11 +14,11 @@ This hackpack doesn't cover the theoretical fundamentals of deep learning, but i
 
 On your computer, create a folder titled 'computer_vision_hackpack'. Within that, create two folders- 'blob-parrot' and 'augmented_data'. Within each of these folders, create two more folders titled- 'parrot' and 'blob'. 
 
-Use the environment.yml file to install dependencies. 
+Use the requirements.txt file to install dependencies. 
 
-```conda env create --file=environment.yml```
+```pip3 install -r requirements.txt```
 
-If you are an M1/M2 mac user, there may be some issues you face while installing tensorflow. I followed this video's instructions which worked flawlessly- https://www.youtube.com/watch?v=_CO-ND1FTOU (your mac may be running the intel chip instead of the M1 which would allow you to take advantage of the GPU!)
+If you are an M1/M2 mac user, there may be some issues you face while installing tensorflow. We followed this video's instructions which worked flawlessly- https://www.youtube.com/watch?v=_CO-ND1FTOU (your mac may be running the intel chip instead of the M1 which would allow you to take advantage of the GPU!)
 
 ## Making the dataset
 
@@ -31,7 +31,7 @@ However, if you wish to tackle a specific problem, you will need to collect data
 
 Once you've found a way to best collect data, it's time to setup your folders and begin adding that data to your dataset! In this hackpack, we organize the data by having a single folder titled "blob-parrot" containing two seperate folders for each class (categories you are classifying)- "parrot" and "blob". It is also good practice to have the split of data be equal for each of the classes (i.e., approximately equal number of images for each class). 
 
-For this hackpack, we collected the data from google images to curate our dataset. If you'd like to do so as well, go for it! Make sure to have all your images be in .jpg form. It can be a bit of a tedious process so you can also download our dataset here- //add link//. 
+For this hackpack, we collected the data from google images to curate our dataset. If you'd like to do so as well, go for it! Make sure to have all your images be in .jpg form. It can be a bit of a tedious process so you can also download our dataset [here] (https://drive.google.com/file/d/19llxcWohf0DqswkYSm4OIqNUV5_VQmS-/view?usp=share_link). 
 
 ## Augmentation 
 
