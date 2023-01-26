@@ -61,7 +61,7 @@ Some details of the architecture are:
 5. Dense: This is a fully connected (dense) layer that applies a set of weights to the input data and produces a set of outputs. The number of weights and outputs is determined by the layer_size variable.
 6. Activation: This layer applies the sigmoid activation function to the output of the preceding layer. The sigmoid function maps the output to a value between 0 and 1, which can be interpreted as a probability.
 
-Furthermore, the follwing are used:
+Furthermore, the following are used:
 1. model.compile: This function configures the model's learning process, setting the loss function, optimization algorithm, and performance metrics to be used during training. In this case, the loss function is binary cross-entropy, which is commonly used for binary classification tasks, and the optimization algorithm is Adam. The model will also be evaluated using the accuracy metric.
 2. model.fit: This function trains the model on the given data (X and y) using the configuration specified in model.compile. The model is trained using mini-batch gradient descent with a batch size of 32 and for 25 epochs. During training, the model's performance on a validation set (a subset of the training data) is monitored using the TensorBoard callback, which logs the model's performance and allows it to be visualized using TensorFlow's visualization tool.
 3. model.summary: This function outputs a summary of all the layers in our model! 
@@ -72,9 +72,11 @@ We save the model using the .save method. You will now have a folder in your pro
 
 ## Improvements
 
-Changing the model
-Using transfer learning
-Get more data!!! 
+1. Getting more data
+2. More variation in data (our data is quite homogenous in this example)
+3. Using techniques like transfer learning (there's a ton of information on this online!)
+4. Trying out different model architectures and hyperparameters
+
 For this problem specifically, it is a relatively easy classification task since the images do not have much variation and hence do not require too much diversity in its dataset. However, for many other problems, you need to be sure to check if you are covering all the edge cases and broadening your datset as much as possible to get the most accurate model! 
 
 # About HackPacks 🌲
